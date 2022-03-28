@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/pulumi/pulumi/master/pkg/codegen/schema/pulumi.json
 ---
-name: xyz
+name: aws-iam
 resources:
-  xyz:index:StaticPage:
+  aws:index:Iamuser:
     isComponent: true
     inputProperties:
       indexContent:
@@ -27,7 +27,7 @@ language:
       Pulumi.Aws: 4.*
   go:
     generateResourceContainerTypes: true
-    importBasePath: github.com/pulumi/pulumi-xyz/sdk/go/xyz
+    importBasePath: github.com/jaxxstorm/pulumi-aws-iam/sdk/go/iam
   nodejs:
     dependencies:
       "@pulumi/aws": "^4.0.0"
